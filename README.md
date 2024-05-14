@@ -37,4 +37,4 @@ Sadman
 Infinity Ward
 
 
-Whoeve made ranger knife model and weapon fil
+Whoeve made ranger knife model and weapon file
