@@ -3,13 +3,10 @@ A gamemode for Call of Duty (2003) where people uses melee.
 
 
 # Requirements
-Call of Duty 1 (2003) / Call of Duty - United Offensive (2004)
+Call of Duty 1 (2003)
 
 
-> 1.1 - 1.5 (CoD1)
-
-
-> 1.41 - 1.51 (CoDUO)
+> 1.1 (CoD1)
 
 
 > [Linux](https://github.com/coyoteclan/cod1server) or [Windows](https://github.com/SADMANGaming/cod1-winserver) server
