@@ -171,7 +171,7 @@ Callback_StartGameType()
 	maps\mp\gametypes\_teams::modeltype();
 	maps\mp\gametypes\_teams::precache();
 	maps\mp\gametypes\_teams::initGlobalCvars();
-                   maps\mp\gametypes\_teams::restrictPlacedWeapons();
+                   maps\mp\gametypes\_teams::restrictPlacedWeapons1();
 
 	setClientNameMode("auto_change");
 
@@ -184,10 +184,10 @@ Callback_PlayerConnect()
 {
 	self.statusicon = "gfx/hud/hud@status_connecting.tga";
 	self waittill("begin");
-                     self thread maps\mp\gametypes\_wmsg::main();
-                     self thread maps\mp\gametypes\_srac::main();
+
 	self.statusicon = "";
 	iprintln(&"MPSCRIPT_CONNECTED", self);
+                     self iprintln('Made by ^5Sadman');
 
 	lpselfnum = self getEntityNumber();
 	logPrint("J;" + lpselfnum + ";" + self.name + "\n");
@@ -571,11 +571,8 @@ updateDeathArray()
 
 spawnPlayer()
 {
-                     self thread maps\mp\gametypes\_bashf::info();
 	self notify("spawned");
 	self notify("end_respawn");
-                     self thread maps\mp\gametypes\_antiff::antiFF();
-                    self thread maps\mp\gametypes\_anticamp::main();
 
 	resettimeout();
 //	if(isdefined(self.shocked))
